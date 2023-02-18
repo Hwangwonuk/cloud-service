@@ -8,4 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: file:///Users/hwang-won-ug/study/git-local-repo
+#          uri: file:///Users/hwang-won-ug/study/git-local-repo
+        uri: https://github.com/Hwangwonuk/spring-cloud-config.git
+  profiles:
+    default: native
