@@ -4,10 +4,8 @@ server:
 spring:
   application:
     name: config-service
-  profiles:
-    active: native
   cloud:
     config:
       server:
         git:
-          url: file:///Users/hwang-won-ug/study/git-local-repo
+          uri: file:///Users/hwang-won-ug/study/git-local-repo
