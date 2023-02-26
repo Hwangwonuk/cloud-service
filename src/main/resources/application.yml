@@ -12,13 +12,13 @@ spring:
   cloud:
     config:
       server:
-        native:
-          search-locations: file://${user.home}/study/native-file-repo
+#        native:
+#          search-locations: file://${user.home}/study/native-file-repo
         git:
-#          uri: file:///Users/hwang-won-ug/study/git-local-repo
-        uri: https://github.com/Hwangwonuk/spring-cloud-config.git
+          uri: https://github.com/Hwangwonuk/spring-cloud-config.git
+        bootstrap: true
   profiles:
-    default: native
+    active: native
 
 management:
   endpoints:
